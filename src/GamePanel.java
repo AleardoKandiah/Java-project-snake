@@ -5,6 +5,10 @@ import javax.swing.JPanel;
 
 public class GamePanel extends JPanel implements ActionListener {
 
+    // create methods 
+    GamePanel(){
+
+    }
     @Override
     public void actionPerformed(ActionEvent e) {
         // TODO Auto-generated method stub
