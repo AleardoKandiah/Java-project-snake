@@ -9,6 +9,17 @@ public class GamePanel extends JPanel implements ActionListener {
     GamePanel(){
 
     }
+    public void startGane() {
+
+    }
+    public void paintParameter(Graphics g) {
+
+    }
+
+    public void draw(Graphics g){
+
+    }
+    
     @Override
     public void actionPerformed(ActionEvent e) {
         // TODO Auto-generated method stub
