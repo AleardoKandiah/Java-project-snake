@@ -38,7 +38,7 @@ public class GamePanel extends JPanel implements ActionListener {
     }
     @Override
     public void actionPerformed(ActionEvent e) {
-        // TODO Auto-generated method stu
+        // TODO Auto-generated method stub
         
     }
     public class MyKeyAdapter extends KeyAdapter{
