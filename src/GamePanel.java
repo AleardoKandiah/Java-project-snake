@@ -7,7 +7,7 @@ import javax.swing.JPanel;
 
 public class GamePanel extends JPanel implements ActionListener {
 
-    // create constructor game meth
+    // create constructor game methods
     GamePanel(){
 
     }
