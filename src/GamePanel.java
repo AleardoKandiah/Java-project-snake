@@ -12,6 +12,7 @@ public class GamePanel extends JPanel implements ActionListener {
 
     // create matrix for unit size of objects
     static final int UNIT_SIZE= 25;
+    static final int GAME_UNITS = (SCREEN_WIDTH * SCREEN_HEIGHT)/UNIT_SIZE;
 
     // create constructor game methods
     GamePanel(){
