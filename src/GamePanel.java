@@ -33,8 +33,13 @@ public class GamePanel extends JPanel implements ActionListener {
         this.setBackground(Color.black);
         this.setFocusable(true);
         this.addKeyListener(new MyKeyAdapter());
+        startGane();
     }
     public void startGane() {
+        newApple();
+        running = true;
+        timer = new Timer(DELAY,this);
+        timer.start();
 
     }
     public void paintParameter(Graphics g) {
@@ -42,6 +47,10 @@ public class GamePanel extends JPanel implements ActionListener {
     }
 
     public void draw(Graphics g) {
+
+    }
+
+    public void newApple() {
 
     }
 
