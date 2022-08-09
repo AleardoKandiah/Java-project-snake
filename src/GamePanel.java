@@ -42,7 +42,7 @@ public class GamePanel extends JPanel implements ActionListener {
         timer.start();
 
     }
-    public void paintParameter(Graphics g) {
+    public void paintComponent(Graphics g) {
         super.paintComponent(g);
         draw(g);
     }
