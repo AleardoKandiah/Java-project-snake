@@ -57,7 +57,8 @@ public class GamePanel extends JPanel implements ActionListener {
     }
 
     public void newApple() {
-
+        // generate coordinates of new apple whevener method is called
+        
     }
 
     public void move() {
