@@ -69,7 +69,7 @@ public class GamePanel extends JPanel implements ActionListener {
 
     public void move() {
         for(int i = bodyParts; i>0; i--) {
-            // shift array coordinates over by one
+            // shift array coordinates by one
              x[i] = x[i-1];
              y[i] = y[i-1];
         }
