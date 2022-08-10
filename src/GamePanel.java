@@ -5,6 +5,8 @@ import java.util.Random;
 
 import javax.swing.JPanel;
 
+import javafx.scene.paint.Color;
+
 public class GamePanel extends JPanel implements ActionListener {
 
  // create matrix for unit size of objects
@@ -54,11 +56,15 @@ public class GamePanel extends JPanel implements ActionListener {
             g.drawLine(0, i*UNIT_SIZE, SCREEN_WIDTH, i*UNIT_SIZE);
 
         }
+        g.setColor(Color.red);
+        g.fillOval(appleX, appleX, UNIT_SIZE, UNIT_SIZE);
     }
 
     public void newApple() {
         // generate coordinates of new apple whevener method is called
-        
+        appleX = random.nextInt((int)(SCREEN_WIDTH*UNIT_SIZE))*UNIT_SIZE;
+        appleY = random.nextInt((int)(SCREEN_HEIGHT*UNIT_SIZE))*UNIT_SIZE;
+
     }
 
     public void move() {
