@@ -58,6 +58,8 @@ public class GamePanel extends JPanel implements ActionListener {
         }
         g.setColor(Color.red);
         g.fillOval(appleX, appleX, UNIT_SIZE, UNIT_SIZE);
+
+        // draw head and body of snake
     }
 
     public void newApple() {
