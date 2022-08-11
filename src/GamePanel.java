@@ -61,6 +61,12 @@ public class GamePanel extends JPanel implements ActionListener {
 
         // draw head and body of snake
         // for loop to iterate through each body part
+        for(int i = 0;i< bodyParts; i++) {
+            if(i == 0) {
+                g.setColor(Color.green);
+                g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
+            }
+        }
     }
 
     public void newApple() {
