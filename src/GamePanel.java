@@ -113,7 +113,7 @@ public class GamePanel extends JPanel implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         // TODO Auto-generated method stub
                 if(running) {
-                    move()
+                    move();
                 }
     }
     public class MyKeyAdapter extends KeyAdapter{
