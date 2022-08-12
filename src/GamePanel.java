@@ -115,6 +115,7 @@ public class GamePanel extends JPanel implements ActionListener {
                 if(running) {
                     move();
                     checkApple();
+                    checkCollisions();
                 }
     }
     public class MyKeyAdapter extends KeyAdapter{
