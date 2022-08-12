@@ -114,6 +114,7 @@ public class GamePanel extends JPanel implements ActionListener {
         // TODO Auto-generated method stub
                 if(running) {
                     move();
+                    checkApple();
                 }
     }
     public class MyKeyAdapter extends KeyAdapter{
