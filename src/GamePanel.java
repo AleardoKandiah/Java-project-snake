@@ -103,7 +103,7 @@ public class GamePanel extends JPanel implements ActionListener {
     }
 
     public void checkCollisions() {
-
+        // check if snake head collides against body
     }
 
     public void gameOver(Graphics g) {
