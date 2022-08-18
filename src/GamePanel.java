@@ -19,8 +19,8 @@ public class GamePanel extends JPanel implements ActionListener {
     static final int DELAY = 75;
 
     // create matrix to hold coordinates and units of snake
-    final int x[] = new int[GAME_UNITS]; 
-    final int y[] = new int[GAME_UNITS]; 
+    final int x[] = new int[GAME_UNITS];
+    final int y[] = new int[GAME_UNITS];
     int bodyParts = 6;
     int applesEaten;
     int appleX;
@@ -96,7 +96,7 @@ public class GamePanel extends JPanel implements ActionListener {
         case 'L':
         x[0] = x[0] -UNIT_SIZE;
         case 'R':
-        x[0] = x[0] +UNIT_SIZE;        
+        x[0] = x[0] +UNIT_SIZE;
     }
     }
     public void checkApple() {
@@ -122,7 +122,10 @@ public class GamePanel extends JPanel implements ActionListener {
         if(y[0] < 0) {
             running = false;
         }
-
+        // check if head touches bottom border
+        if(y[0] > SCREEN_WIDTH) {
+            running= false;
+        }
     }
 
     public void gameOver(Graphics g) {
