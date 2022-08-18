@@ -126,6 +126,10 @@ public class GamePanel extends JPanel implements ActionListener {
         if(y[0] > SCREEN_WIDTH) {
             running = false;
         }
+
+        if(!running) {
+            timer.stop();
+        }
     }
 
     public void gameOver(Graphics g) {
