@@ -5,6 +5,7 @@ import java.util.Random;
 
 import javax.swing.JPanel;
 
+import javafx.scene.input.KeyEvent;
 import javafx.scene.paint.Color;
 
 public class GamePanel extends JPanel implements ActionListener {
@@ -116,11 +117,11 @@ public class GamePanel extends JPanel implements ActionListener {
         // check if head touxhes right border
         if(x[0] > SCREEN_WIDTH) {
             running = false;
+        }
         // check if head touches top border
         if(y[0] < 0) {
             running = false;
         }
-    }
 
     }
 
@@ -140,7 +141,10 @@ public class GamePanel extends JPanel implements ActionListener {
     public class MyKeyAdapter extends KeyAdapter{
         @Override
         public void keyPressed(KeyEvent e) {
-
+            switch(e.getKeyCode()) {
+                case KeyEvent.VK_LEFT:
+                if(direction != 'R')
+            }
         }
     }
 }
