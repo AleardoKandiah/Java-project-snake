@@ -81,7 +81,7 @@ public class GamePanel extends JPanel implements ActionListener{
 		
 	}
 	public void newApple(){
-        // generate coordinates of new apple wheneverr method is called
+        // generate coordinates of new apple whenever method is called
 
 		appleX = random.nextInt((int)(SCREEN_WIDTH/UNIT_SIZE))*UNIT_SIZE;
 		appleY = random.nextInt((int)(SCREEN_HEIGHT/UNIT_SIZE))*UNIT_SIZE;
