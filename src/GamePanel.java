@@ -5,11 +5,15 @@ import java.util.Random;
 
 public class GamePanel extends JPanel implements ActionListener{
 
+     // create matrix for unit size of objects
+
 	static final int SCREEN_WIDTH = 1300;
 	static final int SCREEN_HEIGHT = 750;
 	static final int UNIT_SIZE = 50;
 	static final int GAME_UNITS = (SCREEN_WIDTH*SCREEN_HEIGHT)/(UNIT_SIZE*UNIT_SIZE);
 	static final int DELAY = 175;
+
+    // create matrix to hold coordinates and units of snake
 	final int x[] = new int[GAME_UNITS];
 	final int y[] = new int[GAME_UNITS];
 	int bodyParts = 6;
@@ -21,6 +25,7 @@ public class GamePanel extends JPanel implements ActionListener{
 	Timer timer;
 	Random random;
 	
+    // create constructor for game methods    
 	GamePanel(){
 		random = new Random();
 		this.setPreferredSize(new Dimension(SCREEN_WIDTH,SCREEN_HEIGHT));
@@ -50,7 +55,10 @@ public class GamePanel extends JPanel implements ActionListener{
 			*/
 			g.setColor(Color.red);
 			g.fillOval(appleX, appleY, UNIT_SIZE, UNIT_SIZE);
-		
+
+        // draw head and body of snake
+        // a for loop to iterate through each snake body part
+
 			for(int i = 0; i< bodyParts;i++) {
 				if(i == 0) {
 					g.setColor(Color.green);
@@ -73,11 +81,16 @@ public class GamePanel extends JPanel implements ActionListener{
 		
 	}
 	public void newApple(){
+        // generate coordinates of new apple wheneverr method is called
+
 		appleX = random.nextInt((int)(SCREEN_WIDTH/UNIT_SIZE))*UNIT_SIZE;
 		appleY = random.nextInt((int)(SCREEN_HEIGHT/UNIT_SIZE))*UNIT_SIZE;
 	}
 	public void move(){
 		for(int i = bodyParts;i>0;i--) {
+
+        // shift array coordinates by one
+
 			x[i] = x[i-1];
 			y[i] = y[i-1];
 		}
