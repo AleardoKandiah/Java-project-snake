@@ -25,7 +25,7 @@ public class GamePanel extends JPanel implements ActionListener{
 	Timer timer;
 	Random random;
 	
-    //  constructor for game methods    
+    // constructor for game methods    
 	GamePanel(){
 		random = new Random();
 		this.setPreferredSize(new Dimension(SCREEN_WIDTH,SCREEN_HEIGHT));
