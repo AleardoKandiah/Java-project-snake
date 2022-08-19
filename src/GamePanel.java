@@ -13,7 +13,7 @@ public class GamePanel extends JPanel implements ActionListener{
 	static final int GAME_UNITS = (SCREEN_WIDTH*SCREEN_HEIGHT)/(UNIT_SIZE*UNIT_SIZE);
 	static final int DELAY = 175;
 
-    // create matrix to hold coordinates and units of snake
+    //  matrix to hold coordinates and units of snake
 	final int x[] = new int[GAME_UNITS];
 	final int y[] = new int[GAME_UNITS];
 	int bodyParts = 6;
