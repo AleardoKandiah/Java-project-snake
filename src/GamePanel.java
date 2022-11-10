@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class GamePanel extends JPanel implements ActionListener, java.awt.event.ActionListener{
 
-     // create matrix for unit size of objects
+     // create matrix for unit size of object
 
 	static final int SCREEN_WIDTH = 1300;
 	static final int SCREEN_HEIGHT = 750;
